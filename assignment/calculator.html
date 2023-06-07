@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" defer></script>
+    <title>Discount Calculator</title>
+    <div class="navbar">
+        <div class="company-name">Capirul</div>
+        <div>
+            <a href="index.html">MyProfile</a>
+            <a href="calculator.html">Calculator</a>
+        </div>
+    </div>
+   
+</head>
+<body>
+    <br>
+    <div class="card">
+        <h1>Discount Calculator</h1>
+        <form action="#">
+            <div class="input-item">
+                <label for="amount">Original Price (RM): </label>
+                <input type="number" id="amount" placeholder="Enter price amount.."  required/>
+                
+            </div>
+
+            <div class="input-item">
+                <label for="discount-percentage">Discount % :</label>
+                <input type="number" name="percentage" id="discount-percentage" placeholder="Enter discount amount.."  required/>
+            </div>
+
+
+            <button type="submit" class="calculate">Calculate</button>
+            <input type="reset" value="Reset" class="reset">
+        </form>
+        </div>
+
+        <div id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="card2" >
+        <h1>After Discount</h1>
+        <form>
+            
+            <div class="input-item">
+                <label for="discount-amount"> Savings (RM): </label>
+                <input type="text" id="discount-amount" disabled>
+            </div>
+            
+            <div class="input-item">
+                <label for="pay" aria-disabled="true">Discounted Price (RM):</label>
+                <input type="text" id="price" disabled>
+            </div> 
+        </form>
+    </div>
+</body>
+<footer class="footer">
+    <div>
+      <p>© 2023 SyafirulAfiq. All rights reserved.</p>
+    </div>
+  </footer>
+</html>
